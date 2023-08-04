@@ -119,16 +119,14 @@ footer {
 
 .profile {
   margin-top: 10px;
-  padding-inline-start: 35%;
+  padding-inline-start: 20%;
   & > div:first-of-type {
     border-bottom: 1px solid $borderColor;
   }
   button {
     border-radius: 0;
   }
-  @media screen and (max-width: 1015px) {
-    padding-inline-start: 25%;
-  }
+
   @media screen and (max-width: 768px) {
     padding-inline-start: 10%;
   }

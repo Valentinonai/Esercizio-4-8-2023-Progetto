@@ -10844,18 +10844,13 @@ footer {
 
 .profile {
   margin-top: 10px;
-  padding-inline-start: 35%;
+  padding-inline-start: 20%;
 }
 .profile > div:first-of-type {
   border-bottom: 1px solid rgba(255, 255, 255, 0.198);
 }
 .profile button {
   border-radius: 0;
-}
-@media screen and (max-width: 1015px) {
-  .profile {
-    padding-inline-start: 25%;
-  }
 }
 @media screen and (max-width: 768px) {
   .profile {
