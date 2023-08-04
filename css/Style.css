@@ -10843,24 +10843,15 @@ footer {
 }
 
 .profile {
+  width: 50%;
   margin-top: 10px;
-  padding-inline-start: 20%;
+  padding-inline: 15px;
 }
 .profile > div:first-of-type {
   border-bottom: 1px solid rgba(255, 255, 255, 0.198);
 }
 .profile button {
   border-radius: 0;
-}
-@media screen and (max-width: 768px) {
-  .profile {
-    padding-inline-start: 10%;
-  }
-}
-@media screen and (max-width: 578px) {
-  .profile {
-    padding-inline-start: 5px;
-  }
 }
 
 #language {
@@ -10899,6 +10890,53 @@ footer {
   border-radius: 0;
   width: 80px;
   padding-block: 5px;
+}
+
+.rowButton {
+  display: flex;
+}
+.rowButton a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.rowButton button {
+  width: 100%;
+  min-width: 100px;
+}
+.rowButton button:first-of-type {
+  width: 25%;
+}
+.rowButton button:nth-of-type(2) {
+  width: 25%;
+}
+.rowButton button:last-of-type {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .rowButton button:first-of-type {
+    width: 15%;
+  }
+  .rowButton button:nth-of-type(2) {
+    width: 15%;
+  }
+  .rowButton button:last-of-type {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rowButton {
+    flex-direction: column;
+  }
+  .rowButton button:first-of-type {
+    width: 33%;
+  }
+  .rowButton button:nth-of-type(2) {
+    width: 33%;
+  }
+  .rowButton button:last-of-type {
+    width: 70%;
+  }
 }
 
 .edit {
