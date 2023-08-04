@@ -1,0 +1,30 @@
+body {
+  color: rgba(140, 138, 138, 0.57);
+}
+a {
+  color: rgb(0, 136, 255);
+  text-decoration: none;
+}
+
+#btnProfile {
+  width: 50%;
+  min-width: 200px;
+  background-color: rgba(159, 159, 159, 0.445);
+  border-radius: 0;
+}
+
+#btnProfile2 {
+  background-color: rgba(159, 159, 159, 0.272);
+  border-radius: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .resize {
+    flex-direction: column;
+  }
+  a {
+    margin-bottom: 10px;
+  }
+}

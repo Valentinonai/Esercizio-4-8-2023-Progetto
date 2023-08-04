@@ -1,0 +1,250 @@
+@import "./bootstrapOverride.scss";
+$borderColor: rgba(255, 255, 255, 0.198);
+$colorText: rgba(255, 255, 255, 0.445);
+.btnNav {
+  order: 3;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-inline: 20px;
+}
+.btnNavT {
+  order: 4;
+}
+.lente {
+  order: 1;
+  margin-inline: 20px;
+}
+.bell {
+  order: 3;
+  margin-inline: 20px;
+}
+.logo {
+  width: 80px;
+  background-color: none;
+}
+.kids {
+  order: 2;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.39);
+}
+.listaNav {
+  order: 5;
+}
+@media screen and (min-width: 992px) {
+  .btnNav {
+    order: 4;
+  }
+  .lente {
+    order: 2;
+  }
+  .bell {
+    order: 3;
+  }
+
+  .listaNav {
+    order: 1;
+  }
+}
+#listaLink {
+  order: 5;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+}
+
+.btnGenres {
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 0;
+}
+
+footer {
+  margin-block-start: 100px;
+  color: rgba(255, 255, 255, 0.26);
+  display: inline-block;
+  margin-inline-start: 20%;
+  @media screen and (max-width: 600px) {
+    margin-block-start: 80px;
+    margin-inline-start: 10%;
+  }
+}
+#footer1 {
+  display: flex;
+  div {
+    margin-inline-end: 20px;
+    font-size: 20px;
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+}
+#footer2 {
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px;
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+  }
+  ul {
+    text-decoration: none;
+    padding: 0;
+    margin-right: 40px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+#footer3 {
+  button {
+    color: inherit;
+    border: 1px solid;
+    font-size: 10px;
+    border-radius: 0;
+    @media screen and (max-width: 600px) {
+      font-size: 8px;
+    }
+  }
+}
+
+#footer4 {
+  font-size: 8px;
+  margin-top: 10px;
+}
+//Profile
+
+.profile {
+  margin-top: 80px;
+  padding-inline-start: 35%;
+  & > div:first-of-type {
+    border-bottom: 1px solid $borderColor;
+  }
+  button {
+    border-radius: 0;
+  }
+  @media screen and (max-width: 1015px) {
+    padding-inline-start: 25%;
+  }
+  @media screen and (max-width: 768px) {
+    padding-inline-start: 10%;
+  }
+  @media screen and (max-width: 578px) {
+    padding-inline-start: 5px;
+  }
+}
+#language {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}
+.btnPL {
+  background-color: transparent;
+  border-color: $borderColor;
+  color: $colorText;
+}
+.dati {
+  color: $colorText;
+  & div:first-child {
+    background-color: $borderColor;
+    color: rgba(255, 255, 255, 0.826);
+    padding-inline: 10px;
+    padding-block: 5px;
+  }
+  div:nth-of-type(2) {
+    display: inline-block;
+    padding-inline: 10px;
+    padding-block: 6px;
+    background-color: $borderColor;
+    color: white;
+  }
+  button {
+    border: 1px solid $borderColor;
+    border-radius: 0;
+    width: 80px;
+    padding-block: 5px;
+  }
+}
+.edit {
+  position: absolute;
+  border: 1px solid $borderColor;
+  top: 78%;
+  left: 5%;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+label {
+  word-wrap: break-word;
+}
+
+input[type="checkbox"] {
+  margin-inline-end: 10px;
+  margin-inline-start: 20px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+//--------------------------------
+
+.checkbox-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-wrapper .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eeeeee;
+  border: 2px solid $borderColor;
+  background-color: transparent;
+}
+
+.checkbox-wrapper .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: -3px;
+  width: 10px;
+  height: 20px;
+  border: solid $colorText;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark::after {
+  display: none;
+}
+//----------------

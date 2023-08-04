@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./dist/css/Style.min.css" />
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid containerNav justify-content-start">
+        <img class=".logo me-auto" src="./assets/Logonetflix.png" alt="logo" width="80px" />
+
+        <div class="lente"><i class="bi bi-search text-white"></i></div>
+        <span class="kids">KIDS</span>
+
+        <div class="btnNav dropstart mx-0">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-square"></i>
+          </button>
+          <ul class="dropdown-menu bg-primary border border-1">
+            <li><a class="dropdown-item text-white" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item text-white" href="./Profile.html">Profile</a></li>
+          </ul>
+        </div>
+
+        <button
+          class="btnNavT navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div class="listaNav collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">My List</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-md mb-5 ps-5">
+      <h1 class="mt-5 mb-3 fw-normal text-black">Account</h1>
+      <hr />
+      <div class="row justify-content-between resize">
+        <div class="col-4">
+          <h4>MEMBERSHIP & BILLING</h4>
+          <button type="button" class="btn d-none d-md-block" id="btnProfile">Cancel Membership</button>
+          <button type="button" class="btn d-block d-md-none" id="btnProfile2"><i class="bi bi-trash3"></i></button>
+        </div>
+        <div class="col-8">
+          <div class="d-flex justify-content-between resize">
+            <p class="text-black">student@strive.school</p>
+            <a href="#">Change account email</a>
+          </div>
+          <div class="d-flex justify-content-between resize">
+            <p>Password: **********</p>
+            <a href="#">Change password</a>
+          </div>
+          <div class="d-flex justify-content-between resize">
+            <p>Phone: 333333333333333</p>
+            <a href="#">Change phone number</a>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between resize">
+            <p class="text-black"><i class="bi bi-paypal"></i> admin@strive.school</p>
+            <a href="#">Update payment info</a>
+          </div>
+          <div class="d-flex justify-content-end resize">
+            <a href="#">Billing details</a>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-end resize">
+            <a href="#">Redeem gift card or promo code</a>
+          </div>
+          <div class="d-flex justify-content-end resize">
+            <a href="#">where to buy gift cards</a>
+          </div>
+          <br />
+        </div>
+        <hr />
+        <div class="row justify-content-between resize">
+          <div class="col-4">
+            <h4>PLAN DETAILS</h4>
+          </div>
+          <div class="col-8">
+            <div class="d-flex justify-content-between resize">
+              <p class="text-black">Premium <i class="bi bi-badge-hd-fill"></i></p>
+              <a href="#">Change plan</a>
+            </div>
+            <br />
+          </div>
+        </div>
+        <hr />
+        <div class="row justify-content-between resize">
+          <div class="col-4">
+            <h4>SETTINGS</h4>
+          </div>
+          <div class="col-8">
+            <a href="#">Parental control</a><br />
+            <a href="#">Test participation</a><br />
+            <a href="#">Manage download devices</a><br />
+            <a href="#">Activate a device</a><br />
+            <a href="#">Recent device streaming activity</a><br />
+            <a href="#">Sign out of all devices <br /></a>
+            <br />
+          </div>
+          <br />
+        </div>
+        <hr />
+        <div class="row justify-content-between resize">
+          <div class="col-4">
+            <h4>MY PROFILE</h4>
+          </div>
+          <div class="col-8">
+            <div class="d-flex justify-content-between resize">
+              <p class="m-e-auto text-black"><i class="bi bi-person-square"></i> Strive Student</p>
+
+              <div class="d-flex flex-column">
+                <a href="#">Manage profiles</a>
+                <a href="#">Add profile email</a>
+              </div>
+            </div>
+            <br />
+            <div class="d-flex resize resize">
+              <div style="margin-right: 40%">
+                <a href="#">Language</a><br />
+                <a href="#">Playback settings</a><br />
+                <a href="#">Subtitle appearance</a>
+              </div>
+              <div>
+                <a href="#">Viewing activity</a><br />
+                <a href="#">Ratings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
