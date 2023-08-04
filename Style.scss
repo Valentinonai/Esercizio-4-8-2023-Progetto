@@ -246,3 +246,18 @@ input[type="checkbox"] {
   display: none;
 }
 //----------------
+.titolo {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.item {
+  display: none;
+  position: relative;
+  transition: 3s ease-in-out left;
+}
+
+@media screen and (max-width: 558px) {
+  #footer2 {
+    flex-direction: column;
+  }
+}
