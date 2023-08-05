@@ -64,12 +64,11 @@ $colorText: rgba(255, 255, 255, 0.445);
 
 footer {
   margin-block-start: 100px;
+  margin-bottom: 40px;
   color: rgba(255, 255, 255, 0.26);
   display: inline-block;
-  margin-inline-start: 20%;
   @media screen and (max-width: 600px) {
     margin-block-start: 80px;
-    margin-inline-start: 10%;
   }
 }
 #footer1 {

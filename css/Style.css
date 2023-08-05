@@ -10782,14 +10782,13 @@ textarea.form-control-lg {
 
 footer {
   margin-block-start: 100px;
+  margin-bottom: 40px;
   color: rgba(255, 255, 255, 0.26);
   display: inline-block;
-  margin-inline-start: 20%;
 }
 @media screen and (max-width: 600px) {
   footer {
     margin-block-start: 80px;
-    margin-inline-start: 10%;
   }
 }
 
